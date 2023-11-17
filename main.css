@@ -749,6 +749,8 @@ footer .link {
 
 footer .link h1 {
     font-size: 20px;
+    text-align: center;
+
 
 }
 
@@ -806,6 +808,10 @@ footer .link h1 a {
     }
 
 
+    .about h1 {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
 
     .about .cook {
         display: none;
@@ -813,6 +819,32 @@ footer .link h1 a {
 
     }
 
+    .product .cakesbox .side3 {
+        
+        display: none;
+    }
+    
+    .product .cakesbox .side4 {
+        display: none;
+      
+    }
+    
+    .product .choosebox .choose .sweet img {
+        width: 50px;
+        height: 50px;
+      
+    
+    }
+    
+    
+
+ 
+    
+    .product .choosebox .choose .sweet p {
+    
+        font-size: 10px;
+    
+    }
     .product .choosebox .side1 {
 
         display: none;
@@ -885,6 +917,21 @@ footer .link h1 a {
     .place .formbx .photo img {
         transform: translateX(-40px);
  
+    }
+
+
+  
+    
+    .place .formbx .input {
+        padding: 0;
+    
+    }
+    
+    
+   
+    .place .formbx .photo img {
+    
+        display: none;
     }
     
 }
