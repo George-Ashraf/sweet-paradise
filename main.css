@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    ;
+}
+
+.navbar .navbar-brand {
+    font-family: sail;
+    color: #9C0746;
+    font-size: 25px;
+    margin-left: 50px;
+    text-transform: capitalize;
+}
+
+.navbar .nav-item {
+    margin: 0 10px;
+
+}
+
+.navbar .nav-item .nav-link {
+    color: #9C0746;
+    text-transform: capitalize;
+}
+
+.home {
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+.home svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+}
+
+.home .row {
+    justify-content: center;
+}
+
+.home .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home .welcome h1 {
+    font-family: sail;
+    color: #9C0746;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.home .welcome p {
+    color: #444251;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.home .welcome .buttons {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .welcome .buttons button:nth-child(2) {
+    background: transparent;
+    color: #9C0746;
+    border: #9C0746 solid 1px;
+}
+
+.home .welcome .buttons button {
+    border-radius: 50px;
+    background: linear-gradient(86deg, #9C0746 -15.57%, #B44E79 128.11%);
+    box-shadow: 0px 20px 40px 0px rgba(66, 2, 29, 0.31);
+    width: 170px;
+    height: 40px;
+    color: white;
+    border: none;
+}
+
+.home .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.home .photo img {
+    width: 500px;
+    height: 500px;
+    z-index: 200;
+    margin-bottom: 30px;
+
+}
+
+.home .photo .slider {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+.home .photo .slider img {
+    height: 100%;
+    width: 40px;
+    transition: all 0.5s;
+}
+
+.home .photo .slider img:hover {
+    transform: scale(1.1) translatey(-10px);
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.about .cook {
+    position: absolute;
+    top: 80px;
+    width: 360px;
+    height: 360px;
+    border: 1px solid #9C0746;
+    border-radius: 50%;
+
+}
+
+.about h1 {
+    margin-bottom: 30px;
+}
+
+.about .adv-box {
+    height: 150px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .adv-box .adv {
+    height: auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .adv-box .adv i {
+    background-color: #FDE5EA;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #9C0746;
+    font-size: 30px;
+}
+
+.about .adv-box .adv p {
+    margin-bottom: 8px;
+}
+
+.try {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.try .row {
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.try .icecream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.try .icecream h1 {
+    color: #9C0746;
+
+
+}
+
+.try .icecream h2 {
+    color: #9C0746;
+    font-size: 20px;
+
+}
+
+.try .icecream button {
+    margin-top: 20px;
+    border-radius: 50px;
+    background: linear-gradient(86deg, #9C0746 -15.57%, #B44E79 128.11%);
+    box-shadow: 0px 20px 40px 0px rgba(66, 2, 29, 0.31);
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.wework {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.wework .row {
+    justify-content: space-around;
+}
+
+.wework .work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #FFD4DD;
+    text-align: center;
+}
+
+.wework .work .num {
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD4DD;
+    filter: drop-shadow(0px 4px 30px rgba(67, 6, 32, 0.30));
+    color: #B44E79;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.wework .work h2 {
+    color: #B44E79;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+
+
+}
+
+.product {
+    width: 100%;
+    height: auto;
+}
+
+.product .choosebox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.product .choosebox .side1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.product .choosebox .side2 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.product .choosebox .choose {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product .choosebox .choose .sweet {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.product .choosebox .choose .sweet img {
+    width: 60px;
+    height: 90px;
+    z-index: 10;
+    transition: all 1s;
+
+}
+
+
+.product .choosebox .choose .sweet .shape {
+    background-color: #FDE5EA;
+    border-radius: 50%;
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.product .choosebox .choose .sweet:hover .shape {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.product .choosebox .choose .sweet img:hover {
+    transform: scale(1.2) translateY(-14px);
+
+}
+
+.product .choosebox .choose .sweet p {
+    color: #B44E79;
+    font-weight: bold;
+
+}
+
+.product .cakesbox {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.product .cakesbox .side3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.product .cakesbox .side4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.product .cakesbox .row {
+    justify-content: space-around;
+    padding: 0 140px;
+}
+
+.product .cakesbox .cake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 40px;
+    height: auto;
+}
+
+.product .cakesbox .cake img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.product .cakesbox .cake h1 {
+    font-size: 25px;
+    color: #9C0746;
+
+
+}
+
+.product .cakesbox .cake h2 {
+    color: #9C0746;
+    font-size: 20px;
+
+}
+
+.product .cakesbox .cake button {
+    margin-top: 20px;
+    border-radius: 50px;
+    background: linear-gradient(86deg, #9C0746 -15.57%, #B44E79 128.11%);
+    box-shadow: 0px 20px 40px 0px rgba(66, 2, 29, 0.31);
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.order {
+    padding: 60px 0;
+
+    width: 100%;
+    height: auto;
+    background: linear-gradient(97deg, #FCA4C9 -7.93%, #FE71AD 55.51%, #B44E79 104.2%);
+}
+
+.order .row {
+    justify-content: center;
+}
+
+.order .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.order .text h1 {
+    font-size: 60px;
+    font-family: sail;
+}
+
+
+.order .text h1 span {
+    color: #A0114E;
+}
+
+.order .text p {
+    font-size: 20px;
+    margin: 30px 0 30px 60px;
+}
+
+.order .text form .form-group {
+    position: relative;
+}
+
+.order .text form .form-group i {
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+}
+
+
+.order .text form .form-group .form-control {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: white solid 1px;
+}
+
+.order .text form .form-group .form-control::placeholder {
+    color: white;
+}
+
+.order .text form button {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(86deg, #9C0746 -15.57%, #B44E79 128.11%);
+    box-shadow: 0px 20px 40px 0px rgba(66, 2, 29, 0.31);
+    letter-spacing: 2px;
+}
+
+
+
+.order .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.reviewbox {
+
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.reviewbox .side5 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 220px;
+    height: 220px;
+}
+
+.reviewbox .side6 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 150px;
+    height: 290px;
+}
+
+.reviewbox h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.reviewbox .reviews {
+    padding: 50px 150px;
+}
+
+.reviewbox .reviews .group {
+    padding: 0;
+}
+
+.reviewbox .reviews .person {
+    position: relative;
+}
+
+.reviewbox .reviews .person i {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9C0746;
+    font-size: 30px;
+    background-color: #fff;
+
+}
+
+.reviewbox .reviews .person img {
+    width: 100%;
+    height: 300px;
+}
+
+.reviewbox .reviews .person .tall1 {
+    height: 600px;
+}
+
+.reviewbox .reviews .person .tall2 {
+    height: 500px;
+}
+
+.Instagram {
+    width: 100%;
+    height: auto;
+}
+
+.Instagram h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Instagram .gallary {
+    padding: 0 90px;
+    position: relative;
+}
+
+.Instagram .gallary .side7 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 150px;
+    height: 170px;
+}
+
+.Instagram .gallary .row {
+    justify-content: center;
+}
+
+.Instagram .gallary .photo {
+    margin: 10px 0;
+}
+
+.Instagram .gallary .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.place {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.place .side8 {
+    position: absolute;
+    top: 80%;
+    left: 18%;
+    width: 200px;
+    height: 100px;
+}
+
+.place .side9 {
+    position: absolute;
+    top: 80%;
+    right: 18%;
+    width: 200px;
+    height: 100px;
+    z-index: -2;
+}
+
+.place h1 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.place .formbx {
+    padding: 0;
+    height: 500px;
+    border-radius: 10px;
+    background: #FFD4DD;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place .formbx .word {
+    width: 20%;
+    height: 500px;
+    font-family: sail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place .formbx .word h1 {
+    font-size: 30px;
+    color: #9C0746;
+
+    transform: rotate(-90deg);
+
+}
+
+.place .formbx .input {
+    width: 80%;
+    padding: 50px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.20);
+}
+
+
+.place .formbx .input .form-group {
+    padding: 10px 20px;
+}
+
+.place .formbx .input .form-group .form-control {
+    border: #9C0746 solid 1px;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.place .formbx .input .form-group button {
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #9C0746;
+}
+
+.place .formbx .input header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.place .formbx .input header h1 {
+    color: #9C0746;
+
+
+}
+
+
+.place .formbx .photo {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.place .formbx .photo img {
+    transform: translateX(-100px);
+    width: 190%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: #9C0746;
+    color: white;
+    font-family: sail;
+
+}
+
+footer .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+footer .link h1 {
+    font-size: 20px;
+
+}
+
+footer .link h1 a {
+    text-decoration: none;
+    color: #FFD4DD;
+}
+
+@media (max-width:991px) {
+
+
+    .navbar .nav-item {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 25px;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+    }
+
+
+
+
+    .home .welcome {
+
+        margin-top: 60px;
+
+    }
+
+
+
+
+    .home .photo {
+        margin-top: 50px;
+
+
+    }
+
+    .home .photo img {
+        width: 290px;
+        height: 290px;
+        margin-bottom: 0;
+
+    }
+
+    .home .photo .slider {
+
+        margin-top: 30px;
+
+
+    }
+
+
+
+    .about .cook {
+        display: none;
+
+
+    }
+
+    .product .choosebox .side1 {
+
+        display: none;
+    }
+
+    .product .choosebox .side2 {
+
+        display: none;
+    }
+
+
+
+
+
+
+
+    .product .cakesbox .row {
+        padding: 0 0px;
+    }
+
+
+
+    .product .cakesbox .cake img {
+        width: 70%;
+
+    }
+
+
+
+    .reviewbox .side5 {
+
+        display: none;
+    }
+
+    .reviewbox .side6 {
+
+        display: none;
+    }
+
+    .reviewbox .reviews {
+        /*  */
+        padding: 0px 0px;
+    }
+
+
+    .Instagram .gallary {
+        /*  */
+        padding: 0 0px;
+    }
+
+    .Instagram .gallary .side7 {
+
+        display: none;
+    }
+
+
+ 
+    .place .side8 {
+        display: none;
+    }
+ 
+    
+    .place .formbx {
+        height:auto;
+     
+    }
+    
+ 
+    
+    .place .formbx .photo img {
+        transform: translateX(-40px);
+ 
+    }
+    
+}
